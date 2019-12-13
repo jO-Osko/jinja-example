@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+Jinja zna cel kup stvari: (Ko pišemo tako kodo tipično uporabljamo dvojne zavite oklepaje (brez znaka za odstotek)
+<ul>
+    <li>Uporabiti posamezna polja iz objekta: {{ user.ime }}</li>
+    <li>Poklicati metodo: {{ user.polno_ime() }}</li>
+    <li>Če ima objekt definirano posebno metodo za pretvorbo v niz pa zna uporabiti tudi to: {{ user }}</li>
+    <li>Lahko pa uporabljamo tudi ostale stvari iz pythona: {{ user.polno_ime().lower() }}</li>
+</ul>
+{% endblock %}

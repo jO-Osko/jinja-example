@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spletna stran</title>
+</head>
+<body>
+
+{% block main_content %}
+<h1>
+    Prazna spletna stran
+</h1>
+{% endblock main_content %}
+
+
+<footer style="position: fixed; bottom: 0; right: 0;">
+    {% if user %}
+        Pozdravljen: {{ user }} <a href="/logout">Logout</a>
+    {% else %}
+        <a href="/login">Login</a>
+    {% endif %}
+</footer>
+</body>
+</html>
